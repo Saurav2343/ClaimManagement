@@ -1,0 +1,75 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+header, footer {
+  width: 100%;
+  text-align: center;
+  background-color: #ef1017;
+  position: relative;
+  left: 0;
+  font-family: sans-serif;
+}
+
+header {
+  top: 0;
+  position: -webkit-sticky;
+  text-align: center;
+}
+
+footer {
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ef1017;
+    text-align: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px; /* Adjust based on header height */
+  margin-bottom: 60px; /* Adjust based on footer height */
+}
+
+.search-bar {
+  width: 50%;
+}
+.btn-primary {
+  background-color: hsl(208, 100%, 61%); /* Change to your desired color */
+  border-color: hsl(208, 86%, 59%); /* Change to match the background color */
+  cursor: allowed; /* Optional: change the cursor to indicate it's disabled */
+  opacity: 1; /* Optional: reduce opacity to indicate disabled state */
+  margin-top: 2%;
+}
+
+.btn-primary:disabled {
+  background-color: #6c757d; /* Change to your desired color */
+  border-color: #6c757d; /* Change to match the background color */
+  cursor: not-allowed; /* Optional: change the cursor to indicate it's disabled */
+  opacity: 0.65; /* Optional: reduce opacity to indicate disabled state */
+  margin-top: 2%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 3%; /* Adjust the gap as needed */
+ 
+}
+
+.grid-item {
+  padding: 5px;
+  border: 2px solid #b1b0b0;
+  background-color: #fff;
+}
+
+.underline {
+  text-decoration: underline;}
